@@ -1,18 +1,17 @@
 <template>
   <div class="about">
-    <h1>俗世旅人</h1>
-    <p>
-      欸？我来介绍？真的假的？(*/ω＼*)
-      <br />
-      虽然
-    </p>
+    <self-introduction></self-introduction>
   </div>
 </template>
 
 <script lang="ts">
   import { defineComponent } from 'vue'
+  import SelfIntroduction from '../components/SelfIntroduction.vue'
   export default {
-    name: 'AboutMe'
+    name: 'AboutMe',
+    components: {
+      SelfIntroduction
+    }
   }
 </script>
 
@@ -21,4 +20,8 @@
     text-align: center;
     margin-top: 50px;
   }
+
+    .about p {
+      text-align: left;
+    }
 </style>

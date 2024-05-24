@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <h1>Welcome to My Personal Website</h1>
-    <p>Hello! I'm [Your Name], a [Your Profession].</p>
+    <h1>欢迎来到永世的避难所！</h1>
+    <p></p>
   </div>
 </template>
 
