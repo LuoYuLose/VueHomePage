@@ -1,14 +1,17 @@
 <template>
   <div class="home">
-    <h1>欢迎来到永世的避难所！</h1>
-    <p></p>
+    <IndexIntroduction></IndexIntroduction>
   </div>
 </template>
 
 <script lang="ts">
   import { defineComponent } from 'vue'
+  import IndexIntroduction from '../components/IndexIntroduction.vue'
   export default {
-    name: 'Home'
+    name: 'Home',
+    components: {
+      IndexIntroduction
+    },
   }
 </script>
 

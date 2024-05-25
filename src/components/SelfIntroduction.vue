@@ -13,3 +13,9 @@
     name: 'SelfIntroduction',
   }
 </script>
+
+<style scoped>
+  p {
+    text-align: left;
+  }
+</style>

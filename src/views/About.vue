@@ -20,8 +20,4 @@
     text-align: center;
     margin-top: 50px;
   }
-
-    .about p {
-      text-align: left;
-    }
 </style>

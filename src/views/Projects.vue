@@ -1,9 +1,9 @@
 <template>
   <div class="projects">
-    <h1>My Projects</h1>
+    <ProjectInformation></ProjectInformation>
     <ul>
-      <li v-for="project in projects" :key="project.id">
-        {{ project.name }} - {{ project.description }}
+      <li class="list" v-for="project in projects" :key="project.id">
+        {{ project.name }} - {{ project.desc }}
       </li>
     </ul>
   </div>
@@ -11,14 +11,20 @@
 
 <script lang="ts">
   import { defineComponent } from 'vue'
+  import ProjectInformation from '../components/ProjectInformation.vue'
+  const projects = [
+    { id: 1, name: 'Django所做的Web应用', desc: '目前未在Github创建对应仓库' },
+    { id: 2, name: 'React重构个人主页', desc: '目前未在Github创建对应仓库' },
+    { id: 3, name: 'Python数据结构的MarkDown形式讲解', desc: '目前未在Github创建对应仓库' },
+  ]
   export default {
     name: 'Projects',
+    components: {
+      ProjectInformation
+    },
     data() {
       return {
-        projects: [
-          { id: 1, name: 'Project One', description: 'Description of project one' },
-          { id: 2, name: 'Project Two', description: 'Description of project two' },
-        ]
+        projects,
       }
     }
   }
@@ -28,5 +34,10 @@
   .projects {
     text-align: center;
     margin-top: 50px;
+  }
+
+  .list {
+    text-align: left;
+    margin-top: 20px;
   }
 </style>
