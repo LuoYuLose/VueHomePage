@@ -1,4 +1,5 @@
-import './assets/main.css'
+import './css/main.css'
+import './css/tailwindcss.css'
 
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'

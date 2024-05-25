@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about rounded-lg bg-gradient-to-r from-blue-100 to-white p-6">
     <self-introduction></self-introduction>
   </div>
 </template>

@@ -19,5 +19,6 @@
   .home {
     text-align: center;
     margin-top: 50px;
+    @apply bg-gray-100 p-6 rounded-lg shadow-md;
   }
 </style>
