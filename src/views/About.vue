@@ -1,22 +1,29 @@
 <template>
-  <div class="about rounded-lg bg-gradient-to-r from-blue-100 to-white p-6">
-    <self-introduction></self-introduction>
-  </div>
+    <div class="content-container flex-auto flex-col md:flex-row">
+      <div class="SelfIntroduction rounded-lg bg-gradient-to-r from-blue-100 to-white p-6 shadow">
+        <SelfIntroduction></SelfIntroduction>
+      </div>
+      <div class="PageIntroduction rounded-lg bg-gradient-to-r from-blue-100 to-white p-6 shadow">
+        <PageIntroduction></PageIntroduction>
+      </div>
+    </div>
 </template>
 
 <script lang="ts">
-  import { defineComponent } from 'vue'
+  import { defineComponent, ref } from 'vue'
   import SelfIntroduction from '../components/SelfIntroduction.vue'
+  import PageIntroduction from '../components/PageIntroduction.vue'
   export default {
     name: 'AboutMe',
     components: {
-      SelfIntroduction
-    }
+      SelfIntroduction,
+      PageIntroduction,
+    },
   }
 </script>
 
 <style scoped>
-  .about {
+  .PageIntroduction {
     text-align: center;
     margin-top: 50px;
   }

@@ -1,5 +1,6 @@
 import './css/main.css'
 import './css/tailwindcss.css'
+import './css/transition.css'
 
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
@@ -10,7 +11,7 @@ import Projects from './views/Projects.vue'
 import Contact from './views/Contact.vue'
 
 const routes = [
-  { path: '/home', component: Home },
+  { path: '/', component: Home },
   { path: '/about', component: About },
   { path: '/projects', component: Projects },
   { path: '/contact', component: Contact },

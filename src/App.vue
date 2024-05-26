@@ -8,8 +8,8 @@
 
     <div class="wrapper">
       <MainPage msg="欢迎来到避世酒馆" whatever="渴望平凡，也希望人生能够一路生花。" />
-      <nav>
-        <a href="/home">主页</a>
+      <nav class='text-sky-400'>
+        <a href="/">主页</a>
         <a href="/about">关于我</a>
         <a href="/projects">项目</a>
         <a href="/contact">联系与友链</a>
@@ -17,7 +17,9 @@
     </div>
   </header>
 
-  <router-view></router-view>
+  <transition name="fade" mode="out-in">
+    <router-view></router-view>
+  </transition>
 </template>
 
 <style scoped>

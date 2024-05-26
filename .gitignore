@@ -26,3 +26,4 @@ coverage
 *.ntvs*
 *.njsproj
 *.sw?
+/src/output.css
