@@ -1,16 +1,16 @@
 <template>
   <div class="home">
-    <IndexIntroduction></IndexIntroduction>
+    <indexIntroduction></indexIntroduction>
   </div>
 </template>
 
 <script lang="ts">
   import { defineComponent } from 'vue'
-  import IndexIntroduction from '../components/IndexIntroduction.vue'
+  import indexIntroduction from '../components/indexIntroduction.vue'
   export default {
     name: 'Home',
     components: {
-      IndexIntroduction
+      indexIntroduction
     },
   }
 </script>

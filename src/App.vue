@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import MainPage from './components/MainPage.vue'
+  import mainPage from './components/mainPage.vue'
 </script>
 
 <template>
@@ -7,7 +7,7 @@
     <img alt="Test Pic" class="logo" src="./assets/Hikari.jpg" width="125" height="125" />
 
     <div class="wrapper">
-      <MainPage msg="欢迎来到避世酒馆" whatever="渴望平凡，也希望人生能够一路生花。" />
+      <mainPage msg="欢迎来到避世酒馆" whatever="渴望平凡，也希望人生能够一路生花。" style="font-size: 1.125rem" />
       <nav class='text-sky-400'>
         <a href="/">主页</a>
         <a href="/about">关于我</a>

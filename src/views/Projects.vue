@@ -1,6 +1,6 @@
 <template>
   <div class="projects">
-    <ProjectInformation></ProjectInformation>
+    <projectInformation></projectInformation>
     <ul>
       <li class="list" v-for="project in projects" :key="project.id">
         {{ project.name }} - {{ project.desc }}
@@ -11,7 +11,7 @@
 
 <script lang="ts">
   import { defineComponent } from 'vue'
-  import ProjectInformation from '../components/ProjectInformation.vue'
+  import projectInformation from '../components/projectInformation.vue'
   const projects = [
     { id: 1, name: 'Django所做的Web应用', desc: '目前未在Github创建对应仓库' },
     { id: 2, name: 'React重构个人主页', desc: '目前未在Github创建对应仓库' },
@@ -19,9 +19,9 @@
     { id: 4, name: '使用TailwindCSS美化个人主页', desc: '正在进行中' },
   ]
   export default {
-    name: 'Projects',
+    name: 'projects',
     components: {
-      ProjectInformation
+      projectInformation
     },
     data() {
       return {
