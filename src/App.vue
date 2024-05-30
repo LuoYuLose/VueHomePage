@@ -1,25 +1,39 @@
 <script setup lang="ts">
   import mainPage from './components/mainPage.vue'
+  const picPaths:string[] = [
+    './src/assets/HeadPic/Hikari.jpg',
+    './src/assets/HeadPic/Reisa.jpg',
+    './src/assets/HeadPic/Reisa2.jpg',
+    './src/assets/HeadPic/Mari.jpg',
+    './src/assets/HeadPic/Elaina.jpg',
+    './src/assets/HeadPic/Fox.jpg',
+  ]
+  let randomNum = Math.floor(Math.random() * picPaths.length);
+  let pic:string = picPaths[randomNum];
 </script>
 
 <template>
-  <header>
-    <img alt="Test Pic" class="logo" src="./assets/Hikari.jpg" width="125" height="125" />
+  <div class="">
+    <img alt="RandomPics" class="logo" width="325" :src="pic">
 
-    <div class="wrapper">
-      <mainPage msg="欢迎来到避世酒馆" whatever="渴望平凡，也希望人生能够一路生花。" style="font-size: 1.125rem" />
-      <nav class='text-sky-400'>
-        <a href="/">主页</a>
-        <a href="/about">关于我</a>
-        <a href="/projects">项目</a>
-        <a href="/contact">联系与友链</a>
-      </nav>
-    </div>
-  </header>
+    <header>
+      <div class="wrapper">
+        <mainPage msg="欢迎来到避世酒馆" whatever="渴望平凡，也希望人生能够一路生花。" style="font-size: 1.125rem" />
+        <nav class='text-sky-400'>
+          <router-link to="/">主页</router-link>
+          <router-link to="/about">关于我</router-link>
+          <router-link to="/projects">项目</router-link>
+          <router-link to="/contact">联系与友链</router-link>
+        </nav>
+      </div>
+    </header>
+  </div>
 
-  <transition name="fade" mode="out-in">
-    <router-view></router-view>
-  </transition>
+  <router-view v-slot="{ Component }">
+    <transition name="fade" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </router-view>
 </template>
 
 <style scoped>

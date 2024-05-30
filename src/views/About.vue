@@ -13,7 +13,6 @@
 </template>
 
 <script lang="ts">
-  import { defineComponent, ref } from 'vue'
   import selfIntroduction from '../components/selfIntroduction.vue'
   import pageIntroduction from '../components/pageIntroduction.vue'
   import myAbilitiesAndHobbies from '../components/myAbilitiesAndHobbies.vue'

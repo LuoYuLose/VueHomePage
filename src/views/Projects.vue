@@ -10,7 +10,6 @@
 </template>
 
 <script lang="ts">
-  import { defineComponent } from 'vue'
   import projectInformation from '../components/projectInformation.vue'
   const projects = [
     { id: 1, name: 'Django所做的Web应用', desc: '目前未在Github创建对应仓库' },

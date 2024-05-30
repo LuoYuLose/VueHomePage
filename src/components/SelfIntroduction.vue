@@ -17,6 +17,3 @@
     name: 'SelfIntroduction',
   }
 </script>
-
-<style scoped>
-</style>

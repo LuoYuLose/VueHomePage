@@ -1,6 +1,6 @@
 <template>
-  <h1>欢迎来到永世的避难所！</h1>
-  <p>
+  <h1 class="text-2xl font-bold">欢迎来到永世的避难所！</h1>
+  <p class="para text-base font-semibold">
     有人说，
     <br />
     本站
