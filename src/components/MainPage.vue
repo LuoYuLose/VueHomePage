@@ -7,8 +7,8 @@
 
 <template>
   <div class="greetings">
-    <h1 class="mainColor">{{ msg }}</h1>
-    <p>{{ whatever }}</p>
+    <h1 class="mainColor text-green-200">{{ msg }}</h1>
+    <p class="text-yellow-200">{{ whatever }}</p>
   </div>
 </template>
 
@@ -21,7 +21,6 @@
   }
 
   p {
-    color: #ADD8E6AA;
     font-size: 1.2rem;
   }
 
