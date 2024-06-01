@@ -1,5 +1,5 @@
 <template>
-  <div class="projects">
+  <div class="projects card">
     <projectInformation></projectInformation>
     <ul>
       <li class="list" v-for="project in projects" :key="project.id">

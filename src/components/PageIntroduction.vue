@@ -1,8 +1,8 @@
 <template>
-  <h1 class="header text-2xl font-bold">
+  <h1 class="common-h1">
     网站介绍
   </h1>
-  <p class="para text-base font-semibold">
+  <p class="common-p">
     本网站基于Vue3与TailwindCSS构建，部署于雨云港区服务器。
     <br />
     网站源码部署于
@@ -16,12 +16,3 @@
     name: 'PageIntroduction',
   }
 </script>
-
-<style scoped>
-  .header {
-    text-align: left;
-  }
-  .para {
-        text-align: left;
-  }
-</style>

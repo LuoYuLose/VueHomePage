@@ -2,6 +2,7 @@ import './css/main.css'
 import './css/tailwindcss.css'
 import './css/transition.css'
 import './css/cardStyle.css'
+import './css/commonStyle.css'
 
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'

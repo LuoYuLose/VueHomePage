@@ -1,54 +1,46 @@
 <template>
-  <div class="contact">
-    <h1>Contact Me</h1>
-    <form @submit.prevent="submitForm">
-      <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" v-model="name" required>
+  <div>
+    <div class="card divGaps">
+      <h1 class="common-h1">
+        联系我 ContactMe
+      </h1>
+      <div class="common-p">
+        <ul>
+          <li>
+            QQMail/FoxMail: luoyulose@foxmail.com
+          </li>
+          <li>
+            Outlook: LuoyuMeow@outlook.com
+          </li>
+          <li>
+            Gmail: luoyulose@gmail.com
+          </li>
+          <li>
+            Twitter/X: @RavenMicroCtrl
+          </li>
+          <li>
+            Mastodon: @LuoyuMea@mastodon.social
+          </li>
+        </ul>
       </div>
-      <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" v-model="email" required>
-      </div>
-      <div>
-        <label for="message">Message:</label>
-        <textarea id="message" v-model="message" required></textarea>
-      </div>
-      <button type="submit">Send</button>
-    </form>
+    </div>
+    <div class="card divGaps">
+      <h1 class="common-h1">
+        友链
+      </h1>
+      <p class="common-p">
+        目前暂无哦(┬┬﹏┬┬)
+        <br />
+        不过你可以通过上述的联系方式找到我，我可以主动为你添加友链位！
+        ヾ(≧▽≦*)o
+      </p>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
   export default {
     name: 'Contact',
-    data() {
-      return {
-        name: '',
-        email: '',
-        message: ''
-      }
-    },
-    methods: {
-      submitForm() {
-        alert(`Message sent by ${this.name}`);
-      }
-    }
+
   }
 </script>
-
-<style scoped>
-  .contact {
-    text-align: center;
-    margin-top: 50px;
-  }
-
-  form {
-    display: inline-block;
-    text-align: left;
-  }
-
-    form div {
-      margin-bottom: 15px;
-    }
-</style>

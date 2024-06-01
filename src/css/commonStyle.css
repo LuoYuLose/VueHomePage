@@ -1,0 +1,7 @@
+.common-h1 {
+    @apply text-left text-2xl font-bold;
+}
+
+.common-p {
+    @apply text-base mt-5 text-left font-semibold;
+}

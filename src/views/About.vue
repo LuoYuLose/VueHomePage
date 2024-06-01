@@ -4,9 +4,6 @@
         <selfIntroduction></selfIntroduction>
       </div>
       <div class="card divGaps">
-        <pageIntroduction></pageIntroduction>
-      </div>
-      <div class="card divGaps">
         <myAbilitiesAndHobbies></myAbilitiesAndHobbies>
       </div>
     </div>
@@ -25,9 +22,3 @@
     },
   }
 </script>
-
-<style scoped>
-  .divGaps {
-    margin-top: 20px;
-  }
-</style>

@@ -1,4 +1,5 @@
 @import './base.css';
+@import 'https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css';
 
 #app {
   max-width: 1280px;
@@ -8,9 +9,8 @@
 }
 
 a,
-.mainColor {
+.mainText {
   text-decoration: none;
-  color: #6A5ACDAA;
   transition: 0.4s;
   padding: 3px;
 }
