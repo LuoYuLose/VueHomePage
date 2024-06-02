@@ -1,12 +1,18 @@
 <script setup lang="ts">
   import mainPage from './components/mainPage.vue'
+  import Hikari from '@/assets/HeadPic/Hikari.jpg'
+  import Reisa from '@/assets/HeadPic/Reisa.jpg'
+  import Reisa2 from '@/assets/HeadPic/Reisa2.jpg'
+  import Mari from '@/assets/HeadPic/Mari.jpg'
+  import Elaina from '@/assets/HeadPic/Elaina.jpg'
+  import Fox from '@/assets/HeadPic/Fox.jpg'
   const picPaths:string[] = [
-    './src/assets/HeadPic/Hikari.jpg',
-    './src/assets/HeadPic/Reisa.jpg',
-    './src/assets/HeadPic/Reisa2.jpg',
-    './src/assets/HeadPic/Mari.jpg',
-    './src/assets/HeadPic/Elaina.jpg',
-    './src/assets/HeadPic/Fox.jpg',
+    Hikari,
+    Reisa,
+    Reisa2,
+    Mari,
+    Elaina,
+    Fox,
   ]
   let randomNum = Math.floor(Math.random() * picPaths.length);
   let pic:string = picPaths[randomNum];
@@ -20,7 +26,7 @@
       <div>
         <div class="wrapper">
           <mainPage msg="欢迎来到避世酒馆" whatever="渴望平凡，也希望人生能够一路生花。" style="font-size: 1.125rem" />
-          <div class="text-sky-200 mt-4">
+          <div class="text-sky-100 mt-4">
             <p class="px-1">
               按我切换右侧文字喵φ(*￣0￣)
             </p>
