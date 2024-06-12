@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import mainPage from './components/mainPage.vue'
+  import mainPage from '@/components/mainPage.vue'
   import Hikari from '@/assets/HeadPic/Hikari.jpg'
   import Reisa from '@/assets/HeadPic/Reisa.jpg'
   import Reisa2 from '@/assets/HeadPic/Reisa2.jpg'

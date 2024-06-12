@@ -3,10 +3,10 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>LaunchJsonDebugger</DebuggerFlavor>
     <LaunchJsonTarget>{
-  "name": "localhost (Chrome)",
-  "type": "chrome",
+  "name": "localhost (Edge)",
+  "type": "edge",
   "request": "launch",
-  "url": "http://localhost:5173",
+  "url": "http://localhost:8080",
   "webRoot": "D:\\Projects\\Vue\\HomepageBasedOnVue"
 }</LaunchJsonTarget>
   </PropertyGroup>

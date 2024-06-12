@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="./src/assets/Miku.jpg">
-    <meta name="PersonalHomePage" content="No More Ideal. No More Fate">
-      <style>
-          #background {
-              background-image: url("./src/assets/Lonely.png");
-              width: 100%;
-              height: 100%;
-              position: fixed;
-              background-size: 100% 100%;
-          }
-      </style>
-    <title>永世避难所</title>
-  </head>
-  <body>
-    <div id="background">
-        <div id="app"></div>
-        <script type="module" src="/src/main.ts"></script>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./src/assets/Miku.jpg">
+  <meta name="PersonalHomePage" content="No More Ideal. No More Fate">
+  <style>
+    #background {
+      background-image: url("./src/assets/ArisuBackground.jpg");
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background-size: 100% 100%;
+    }
+
+    @media (max-width: 1024px) {
+      #background {
+        background-image: url('./src/assets/Mia.jpg');
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-size: 100% 100%;
+      }
+    }
+  </style>
+  <title>永世避难所</title>
+</head>
+<body>
+  <div id="background">
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </div>
+</body>
 </html>
