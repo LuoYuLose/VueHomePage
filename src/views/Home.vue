@@ -10,8 +10,8 @@
 </template>
 
 <script lang="ts">
-  import indexIntroduction from '../components/indexIntroduction.vue'
-  import PageIntroduction from "@/components/pageIntroduction.vue";
+  import indexIntroduction from '@/components/IndexIntroduction.vue'
+  import PageIntroduction from "@/components/PageIntroduction.vue";
   export default {
     name: 'Home',
     components: {

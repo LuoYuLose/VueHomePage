@@ -10,9 +10,9 @@
 </template>
 
 <script lang="ts">
-  import selfIntroduction from '../components/selfIntroduction.vue'
-  import pageIntroduction from '../components/pageIntroduction.vue'
-  import myAbilitiesAndHobbies from '../components/myAbilitiesAndHobbies.vue'
+  import selfIntroduction from '@/components/SelfIntroduction.vue'
+  import pageIntroduction from '@//components/PageIntroduction.vue'
+  import myAbilitiesAndHobbies from '@/components/MyAbilitiesAndHobbies.vue'
   export default {
     name: 'AboutMe',
     components: {
