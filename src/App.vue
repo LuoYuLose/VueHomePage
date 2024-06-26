@@ -20,7 +20,6 @@
 
 <template>
   <div class="">
-
     <header>
       <img alt="RandomPics" class="logo" width="325" :src="pic">
       <div>

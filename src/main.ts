@@ -6,7 +6,9 @@ import './css/commonStyle.css'
 
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
-import App from './App.vue'
+import App from '@/App.vue'
+import Top from '@/Top.vue'
+import Left from '@/Left.vue'
 import Home from './views/Home.vue'
 import About from './views/About.vue'
 import Projects from './views/Projects.vue'
@@ -25,3 +27,5 @@ const router = createRouter({
 })
 
 createApp(App).use(router).mount('#app')
+createApp(Top).mount('#top')
+createApp(Left).mount('#left')

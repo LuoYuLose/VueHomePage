@@ -20,10 +20,13 @@ coverage
 # Editor directories and files
 .vs
 .vscode
-!.vscode/extensions.json
 .idea
 *.suo
 *.ntvs*
 *.njsproj
 *.sw?
 /src/output.css
+
+# VS
+homepagebasedonvue.esproj
+HomepageBasedOnVue.sln
